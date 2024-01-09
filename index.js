@@ -12,9 +12,10 @@ app.use(express.json());
 app.use(cors());
 
 // Database connection With MongoDB
-mongoose.connect(
-  "mongodb+srv://peter:Apple%40298@cluster0.ueu5ltj.mongodb.net/shopping"
-);
+mongoose
+  .connect
+  // "mongodb+srv://username:password@cluster0.ueu5ltj.mongodb.net/shopping"
+  ();
 
 // API Creation
 app.get("/", (req, res) => {
